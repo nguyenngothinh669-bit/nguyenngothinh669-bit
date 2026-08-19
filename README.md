@@ -1,6 +1,6 @@
 <!-- Nguyễn Ngô Thịnh — GitHub Profile -->
 <a href="#" target="_blank">
-  <img src="svg/shark-banner.svg" width="1200" alt="nguyenngothinh669-bit-banner" />
+  <img src="shark-banner.svg" width="1200" alt="nguyenngothinh669-bit-banner" />
 </a>
 
 <br>
@@ -67,7 +67,7 @@
 <br>
 <div align="center">
   <a href="https://github.com/nguyenngothinh669-bit" target="_blank">
-    <img width="90" height="90" src="images/shark-logo-transparent.png" alt="nguyenngothinh669-bit-shark-logo" />
+    <img width="90" height="90" src="shark-logo-transparent.png" alt="nguyenngothinh669-bit-shark-logo" />
   </a>
   <a href="https://facebook.com/N.N.Q.Thinh3010/" target="_blank">
     <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="nguyenngothinh-facebook" />
@@ -86,6 +86,6 @@
 <br>
 <div align="center">
   <a href="#" target="_blank">
-    <img src="svg/shark-quote.svg" width="846" height="160" alt="nguyenngothinh669-bit-quote" />
+    <img src="shark-quote.svg" width="846" height="160" alt="nguyenngothinh669-bit-quote" />
   </a>
 </div>
