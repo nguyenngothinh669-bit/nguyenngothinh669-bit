@@ -101,14 +101,14 @@
     <ellipse cx="980" cy="220" rx="260" ry="200" fill="url(#glow)"/>
 
     <g>
-      <text x="70" y="105" class="eyebrow" font-size="18" letter-spacing="2" fill="#6FD8CE">Xin chào</text>
-      <text x="70" y="160" class="name" font-size="46" font-weight="700" fill="#F2FBFA">Mình là Thinh</text>
+      <text x="70" y="105" class="eyebrow" font-size="18" letter-spacing="2" fill="#6FD8CE">こんにちは</text>
+      <text x="70" y="160" class="name" font-size="46" font-weight="700" fill="#F2FBFA">私はティンです</text>
       <rect x="530" y="128" width="5" height="38" fill="#4DE8E0" class="cursor"/>
 
       <text x="70" y="205" class="role" font-size="24" fill="#4DE8E0" font-weight="600">Backend Developer</text>
-      <text x="70" y="233" class="subrole" font-size="16" fill="#8FC7C2">hiểu cơ bản về Frontend</text>
+      <text x="70" y="233" class="subrole" font-size="16" fill="#8FC7C2">Frontend に関する基本的な理解</text>
 
-      <text x="70" y="270" class="tagline" font-size="15" fill="#BFE9E3">🦈 Lặn sâu vào code, bứt phá như cá mập</text>
+      <text x="70" y="270" class="tagline" font-size="15" fill="#BFE9E3">🦈コードの深淵に飛び込み、サメのように突き進め</text>
     </g>
 
     <g class="wave-back">
