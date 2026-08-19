@@ -45,19 +45,36 @@
 </div>
 
 
-
-<img align="right" src="https://github.com/user-attachments/assets/8e1b864b-2b69-4167-b58c-259ef7ae5e20" width="200" alt="coding gif" />
-
 ## 私について
-| | |
-|---|---|
-|  **学校** | 郵政通信技術学院（PTIT） |
-|  **出身国** |ベトナム|
-|  **専攻** |情報技術（IT） |
-|  **性格** | 常に新しく斬新なものを求めている。 |
-|  **外国語** | 私の英語と日本語はまだ完全に流暢とは言えませんが、日々上達しています。 |
 
-<br clear="right"/>
+<table width="100%">
+  <tr>
+    <td width="20%"><b>学校</b></td>
+    <td width="55%">郵政通信技術学院（PTIT）</td>
+    <td width="25%" rowspan="5" align="center" valign="middle">
+      <img src="https://github.com/user-attachments/assets/8e1b864b-2b69-4167-b58c-259ef7ae5e20" width="100%" style="max-width: 200px; display: block;" alt="coding gif" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>出身国</b></td>
+    <td>ベトナム</td>
+  </tr>
+  <tr>
+    <td><b>専攻</b></td>
+    <td>情報技術（IT）</td>
+  </tr>
+  <tr>
+    <td><b>性格</b></td>
+    <td>常に新しく斬新なものを求めている。</td>
+  </tr>
+  <tr>
+    <td><b>外国語</b></td>
+    <td>私の英語と日本語はまだ完全に流暢とは言えませんが、日々上達しています。</td>
+  </tr>
+</table>
+
+<br clear="both"/>
+
 
 <br>
 <h2 align="center"> GitHub Stats </h2>
