@@ -5,9 +5,9 @@
 
 <br>
 
-<h3 align="center">🦈 Backend Developer · Hiểu cơ bản về Frontend 🦈</h3>
+<h3 align="center">🦈 Backend Developer · Frontend に関する基本的な理解 🦈</h3>
 <p align="center">
-  <em>Kiên trì học hỏi mỗi ngày — như cá mập, chỉ dừng bơi là chìm.</em>
+  <em>サメのように、絶えず学び続けてください。泳ぐのをやめれば、沈んでしまうのですから。</em>
 </p>
 
 <br>
@@ -79,7 +79,7 @@
     <img src="https://img.icons8.com/bubbles/100/000000/domain.png" alt="nguyenngothinh-website" style="opacity:0.45" />
   </a>
 </div>
-<p align="center"><sub>🌐 Website cá nhân đang được xây dựng — sẽ cập nhật sớm!</sub></p>
+<p align="center"><sub>🌐 個人ウェブサイトは現在制作中です。まもなく更新予定です！</sub></p>
 
 <br>
 <h2 align="center">📑 My Favorite Quote 📑</h2>
