@@ -12,7 +12,7 @@
 
 <br>
 
-<h2 align="center">🛠 Technologies and Tools 🛠</h2>
+<h2 align="center"> Technologies and Tools </h2>
 <br>
 <div align="center">
 <span><img src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5 logo" title="HTML5" height="25" /></span>
@@ -44,8 +44,24 @@
 <span><img src="https://img.shields.io/badge/Đang%20học%20thêm-...-14708A" alt="Learning more" title="Đang bổ sung thêm ngôn ngữ, kỹ năng mới" height="25" /></span>
 </div>
 
+
+
+<img align="right" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="350" alt="coding gif" />
+
+##  Về mình
+
+| | |
+|---|---|
+|  **学校** | 郵政通信技術学院（PTIT） |
+|  **出身国** |ベトナム|
+|  **専攻** |情報技術（IT） |
+|  **性格** | 常に新しく斬新なものを求めている。 |
+|  **外国語** | 私の英語と日本語はまだ完全に流暢とは言えませんが、日々上達しています。 |
+
+<br clear="right"/>
+
 <br>
-<h2 align="center">🔥 GitHub Stats 🔥</h2>
+<h2 align="center"> GitHub Stats </h2>
 <br>
 <div align="center">
   <a href="https://github.com/nguyenngothinh669-bit" title="nguyenngothinh669-bit">
@@ -63,7 +79,7 @@
 </div>
 
 <br>
-<h2 align="center">👽 Where to find me 👽</h2>
+<h2 align="center"> Where to find me </h2>
 <br>
 <div align="center">
   <a href="https://github.com/nguyenngothinh669-bit" target="_blank">
@@ -79,10 +95,10 @@
     <img src="https://img.icons8.com/bubbles/100/000000/domain.png" alt="nguyenngothinh-website" style="opacity:0.45" />
   </a>
 </div>
-<p align="center"><sub>🌐 個人ウェブサイトは現在制作中です。まもなく更新予定です！</sub></p>
+<p align="center"><sub> 個人ウェブサイトは現在制作中です。まもなく更新予定です！</sub></p>
 
 <br>
-<h2 align="center">📑 My Favorite Quote 📑</h2>
+<h2 align="center"> My Favorite Quote </h2>
 <br>
 <div align="center">
   <a href="#" target="_blank">
