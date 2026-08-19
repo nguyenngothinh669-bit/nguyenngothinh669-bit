@@ -5,7 +5,7 @@
 
 <br>
 
-<h3 align="center">🦈 Backend Developer · Frontend に関する基本的な理解 🦈</h3>
+<h3 align="center"> Backend Developer · Frontend に関する基本的な理解 </h3>
 <p align="center">
   <em>サメのように、絶えず学び続けてください。泳ぐのをやめれば、沈んでしまうのですから。</em>
 </p>
@@ -46,10 +46,9 @@
 
 
 
-<img align="right" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="350" alt="coding gif" />
+<img align="right" src="https://github.com/user-attachments/assets/8e1b864b-2b69-4167-b58c-259ef7ae5e20" width="200" alt="coding gif" />
 
-##  Về mình
-
+## 私について
 | | |
 |---|---|
 |  **学校** | 郵政通信技術学院（PTIT） |
