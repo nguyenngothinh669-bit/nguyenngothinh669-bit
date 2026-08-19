@@ -1,61 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
   <defs>
     <!-- Atmosphere & Sky Gradient -->
-    <linearGradient id="skySunset" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="35%" stop-color="#3b0764" />
-      <stop offset="65%" stop-color="#b91c1c" />
-      <stop offset="85%" stop-color="#ea580c" />
-      <stop offset="100%" stop-color="#fde047" />
+    <linearGradient id="skyAtmosphere" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="30%" stop-color="#180b33" />
+      <stop offset="60%" stop-color="#831843" />
+      <stop offset="85%" stop-color="#c2410c" />
+      <stop offset="100%" stop-color="#f59e0b" />
     </linearGradient>
 
-    <!-- Sun Glow Gradient -->
-    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+    <!-- Sun & Moon Flare -->
+    <radialGradient id="celestialGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="30%" stop-color="#fef08a" />
-      <stop offset="70%" stop-color="rgba(249, 115, 22, 0.4)" />
+      <stop offset="25%" stop-color="#fef08a" />
+      <stop offset="60%" stop-color="rgba(249, 115, 22, 0.45)" />
       <stop offset="100%" stop-color="rgba(249, 115, 22, 0)" />
     </radialGradient>
 
     <!-- Deep Ocean Waves Gradients -->
-    <linearGradient id="oceanDeep" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#831843" />
+    <linearGradient id="oceanLayer1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#701a75" />
       <stop offset="25%" stop-color="#1e1b4b" />
       <stop offset="100%" stop-color="#020617" />
     </linearGradient>
 
-    <linearGradient id="oceanMid" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="oceanLayer2" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#be185d" />
       <stop offset="30%" stop-color="#0369a1" />
-      <stop offset="100%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#061226" />
     </linearGradient>
 
-    <linearGradient id="oceanFront" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="35%" stop-color="#0284c7" />
-      <stop offset="100%" stop-color="#082f49" />
+    <linearGradient id="oceanLayer3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="25%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#021a38" />
     </linearGradient>
 
     <!-- Shark Counter-Shading Gradients -->
-    <linearGradient id="sharkDorsal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" />
-      <stop offset="50%" stop-color="#334155" />
+    <linearGradient id="sharkDorsalSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="45%" stop-color="#334155" />
       <stop offset="100%" stop-color="#64748b" />
     </linearGradient>
 
-    <linearGradient id="sharkBelly" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="sharkUnderbelly" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="70%" stop-color="#e2e8f0" />
+      <stop offset="65%" stop-color="#e2e8f0" />
       <stop offset="100%" stop-color="#94a3b8" />
     </linearGradient>
 
-    <linearGradient id="textNeonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Neon Branding Title Gradient -->
+    <linearGradient id="neonTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="45%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#ffffff" />
     </linearGradient>
 
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <!-- Pill Glass Background -->
+    <linearGradient id="glassPillBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.88)" />
+      <stop offset="100%" stop-color="rgba(2, 6, 23, 0.94)" />
+    </linearGradient>
+
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
@@ -63,8 +71,8 @@
       </feMerge>
     </filter>
 
-    <filter id="strongGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
+    <filter id="strongGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -72,204 +80,236 @@
     </filter>
 
     <style>
-      /* CSS Keyframe Animations for GitHub Native SVG */
-      @keyframes sharkBreachTrajectory {
-        0%, 15% {
-          transform: translate(180px, 400px) rotate(-45deg) scale(0.6);
+      @keyframes sharkBreachLeap {
+        0%, 12% {
+          transform: translate(160px, 440px) rotate(-46deg) scale(0.65);
           opacity: 0;
         }
-        20% {
+        18% {
           opacity: 1;
-          transform: translate(280px, 310px) rotate(-35deg) scale(0.9);
+          transform: translate(270px, 340px) rotate(-38deg) scale(0.92);
         }
         42% {
-          /* Apex of the leap */
-          transform: translate(580px, 90px) rotate(5deg) scale(1.15);
+          transform: translate(600px, 120px) rotate(6deg) scale(1.18);
           opacity: 1;
         }
-        65% {
-          /* Dive down into ocean */
-          transform: translate(900px, 330px) rotate(48deg) scale(1);
+        64% {
+          transform: translate(930px, 350px) rotate(48deg) scale(0.98);
           opacity: 1;
         }
         72%, 100% {
-          transform: translate(1020px, 460px) rotate(58deg) scale(0.8);
+          transform: translate(1050px, 490px) rotate(56deg) scale(0.75);
           opacity: 0;
         }
       }
 
-      @keyframes splashEruptStart {
-        0%, 16% { transform: scale(0); opacity: 0; }
-        19% { transform: scale(0.5); opacity: 1; }
-        26% { transform: scale(1.8); opacity: 0; }
+      @keyframes splashRingLeft {
+        0%, 14% { transform: scale(0); opacity: 0; }
+        18% { transform: scale(0.5); opacity: 1; }
+        26% { transform: scale(2.2); opacity: 0; }
         100% { transform: scale(0); opacity: 0; }
       }
 
-      @keyframes splashEruptEnd {
-        0%, 62% { transform: scale(0); opacity: 0; }
-        66% { transform: scale(0.6); opacity: 1; }
-        74% { transform: scale(2.2); opacity: 0; }
+      @keyframes splashRingRight {
+        0%, 61% { transform: scale(0); opacity: 0; }
+        65% { transform: scale(0.6); opacity: 1; }
+        73% { transform: scale(2.4); opacity: 0; }
         100% { transform: scale(0); opacity: 0; }
       }
 
-      @keyframes waveScroll1 {
+      @keyframes oceanScrollBack {
         0% { transform: translateX(0); }
-        50% { transform: translateX(-60px); }
+        50% { transform: translateX(-50px); }
         100% { transform: translateX(0); }
       }
 
-      @keyframes waveScroll2 {
+      @keyframes oceanScrollFront {
         0% { transform: translateX(-40px); }
         50% { transform: translateX(40px); }
         100% { transform: translateX(-40px); }
       }
 
-      @keyframes pulseAura {
-        0%, 100% { opacity: 0.65; transform: scale(1); }
-        50% { opacity: 0.95; transform: scale(1.08); }
+      @keyframes pulseCelestial {
+        0%, 100% { opacity: 0.7; transform: scale(1); }
+        50% { opacity: 0.95; transform: scale(1.06); }
       }
 
-      @keyframes titleFlicker {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.88; }
+      @keyframes pillHoverEffect {
+        0%, 100% { opacity: 0.95; }
+        50% { opacity: 1; }
       }
 
-      .animated-shark-group {
-        animation: sharkBreachTrajectory 5.5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+      .shark-jumping-actor {
+        animation: sharkBreachLeap 5.5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
         transform-origin: center center;
       }
 
-      .splash-start-ring {
-        animation: splashEruptStart 5.5s ease-out infinite;
-        transform-origin: 280px 330px;
+      .splash-left {
+        animation: splashRingLeft 5.5s ease-out infinite;
+        transform-origin: 270px 360px;
       }
 
-      .splash-end-ring {
-        animation: splashEruptEnd 5.5s ease-out infinite;
-        transform-origin: 900px 330px;
+      .splash-right {
+        animation: splashRingRight 5.5s ease-out infinite;
+        transform-origin: 930px 360px;
       }
 
-      .wave-layer-1 {
-        animation: waveScroll1 4s ease-in-out infinite;
-      }
-
-      .wave-layer-2 {
-        animation: waveScroll2 3s ease-in-out infinite;
-      }
-
-      .sun-pulse {
-        animation: pulseAura 4s ease-in-out infinite;
-      }
-
-      .neon-title {
-        animation: titleFlicker 3s ease-in-out infinite;
-      }
+      .wave-back { animation: oceanScrollBack 4s ease-in-out infinite; }
+      .wave-front { animation: oceanScrollFront 3.2s ease-in-out infinite; }
+      .celestial-body { animation: pulseCelestial 4s ease-in-out infinite; transform-origin: 960px 100px; }
+      .tech-pill { animation: pillHoverEffect 3s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- 1. Background Sky -->
-  <rect width="1200" height="480" fill="url(#skySunset)" />
+  <!-- 1. Background Sky Canvas -->
+  <rect width="1200" height="520" fill="url(#skyAtmosphere)" />
 
-  <!-- 2. Sun & Glow Aura -->
-  <circle cx="920" cy="110" r="140" fill="url(#sunGlow)" class="sun-pulse" />
-  <circle cx="920" cy="110" r="45" fill="#fffbeb" opacity="0.9" filter="url(#glow)" />
+  <!-- 2. Celestial Sun -->
+  <circle cx="960" cy="100" r="160" fill="url(#celestialGlow)" class="celestial-body" />
+  <circle cx="960" cy="100" r="50" fill="#fffbeb" opacity="0.95" filter="url(#neonGlow)" />
 
-  <!-- 3. Ambient Clouds / Horizon Haze -->
-  <g opacity="0.25">
-    <ellipse cx="250" cy="90" rx="140" ry="24" fill="#ffffff" />
-    <ellipse cx="650" cy="130" rx="190" ry="28" fill="#fdba74" />
-    <ellipse cx="1080" cy="80" rx="110" ry="20" fill="#ffffff" />
+  <!-- 3. Atmospheric Cloud Layers -->
+  <g opacity="0.2">
+    <ellipse cx="200" cy="80" rx="160" ry="26" fill="#ffffff" />
+    <ellipse cx="640" cy="120" rx="220" ry="32" fill="#fdba74" />
+    <ellipse cx="1100" cy="70" rx="130" ry="22" fill="#ffffff" />
   </g>
 
-  <!-- 4. Background Ocean Wave (Deep) -->
-  <path class="wave-layer-1" d="M 0 310 Q 150 285, 300 310 T 600 310 T 900 310 T 1200 310 L 1200 480 L 0 480 Z" fill="url(#oceanDeep)" opacity="0.95" />
+  <!-- 4. Background Deep Ocean Wave -->
+  <path class="wave-back" d="M 0 340 Q 150 310, 300 340 T 600 340 T 900 340 T 1200 340 L 1200 520 L 0 520 Z" fill="url(#oceanLayer1)" opacity="0.95" />
 
-  <!-- 5. Splash Ring at Entry Point (Left) -->
-  <g class="splash-start-ring">
-    <ellipse cx="280" cy="330" rx="60" ry="16" fill="none" stroke="#ffffff" stroke-width="4" filter="url(#glow)" />
-    <ellipse cx="280" cy="330" rx="35" ry="10" fill="none" stroke="#67e8f9" stroke-width="2.5" />
-    <!-- Water spray droplets -->
-    <circle cx="260" cy="300" r="4" fill="#ffffff" />
-    <circle cx="295" cy="290" r="5" fill="#ffffff" />
-    <circle cx="315" cy="310" r="3.5" fill="#67e8f9" />
+  <!-- 5. Splash Ring at Breaching Point -->
+  <g class="splash-left">
+    <ellipse cx="270" cy="360" rx="70" ry="18" fill="none" stroke="#ffffff" stroke-width="4.5" filter="url(#neonGlow)" />
+    <ellipse cx="270" cy="360" rx="40" ry="10" fill="none" stroke="#00f2fe" stroke-width="3" />
+    <circle cx="245" cy="320" r="4.5" fill="#ffffff" />
+    <circle cx="285" cy="305" r="5.5" fill="#ffffff" />
+    <circle cx="310" cy="330" r="4" fill="#38bdf8" />
   </g>
 
-  <!-- 6. THE BREACHING SHARK (Animated trajectory) -->
-  <g class="animated-shark-group">
-    <!-- Shark Shadow & Water Gleam -->
-    <g filter="url(#glow)">
-      <!-- Main Hydrodynamic Dorsal Body -->
-      <path d="M 95 0 C 70 -26, 15 -34, -40 -20 C -70 -12, -90 -6, -115 -2 L -150 -45 C -138 -18, -125 0, -134 6 L -154 38 C -130 14, -100 8, -90 5 C -55 22, 10 30, 65 18 C 84 10, 92 5, 95 0 Z" fill="url(#sharkDorsal)" stroke="#38bdf8" stroke-width="1.5" />
-
-      <!-- White Counter-Shaded Underbelly -->
-      <path d="M 95 0 C 82 8, 65 18, 10 30 C -55 22, -90 5, -115 -2 C -85 5, -48 7, 0 4 C 48 -1, 80 -2, 95 0 Z" fill="url(#sharkBelly)" />
-
-      <!-- Iconic Dorsal Fin -->
-      <path d="M 12 -28 C 6 -65, -9 -74, -22 -78 C -16 -54, -12 -38, -26 -22 Z" fill="url(#sharkDorsal)" stroke="#38bdf8" stroke-width="1.2" />
-
-      <!-- Pectoral Fin -->
-      <path d="M 38 12 C 18 45, -6 70, -30 74 C -22 54, -10 34, 6 18 Z" fill="url(#sharkDorsal)" stroke="#38bdf8" stroke-width="1.2" />
-
-      <!-- 5 Gill Slits -->
-      <path d="M 30 -5 Q 28 4, 30 12" stroke="#0f172a" stroke-width="2" fill="none" />
-      <path d="M 24 -5 Q 22 4, 24 12" stroke="#0f172a" stroke-width="2" fill="none" />
-      <path d="M 18 -5 Q 16 4, 18 12" stroke="#0f172a" stroke-width="2" fill="none" />
-      <path d="M 12 -5 Q 10 4, 12 12" stroke="#0f172a" stroke-width="2" fill="none" />
-      <path d="M 6 -5 Q 4 4, 6 12" stroke="#0f172a" stroke-width="2" fill="none" />
-
-      <!-- Predatory Eye -->
-      <circle cx="76" cy="-4" r="3.5" fill="#020617" />
-      <circle cx="77" cy="-5" r="1.2" fill="#ffffff" />
-
-      <!-- Wet Skin Sheen Reflection -->
-      <path d="M 85 -2 C 52 -22, 2 -24, -48 -14" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" fill="none" />
+  <!-- 6. Breaching Shark -->
+  <g class="shark-jumping-actor">
+    <g filter="url(#neonGlow)">
+      <path d="M 105 0 C 80 -28, 20 -38, -45 -22 C -80 -14, -100 -8, -130 -3 L -170 -50 C -156 -20, -140 0, -150 7 L -174 42 C -145 16, -112 9, -100 6 C -60 25, 12 34, 75 20 C 95 12, 102 6, 105 0 Z" fill="url(#sharkDorsalSkin)" stroke="#38bdf8" stroke-width="1.8" />
+      <path d="M 105 0 C 92 9, 75 20, 12 34 C -60 25, -100 6, -130 -3 C -95 6, -55 8, 0 5 C 55 -1, 90 -2, 105 0 Z" fill="url(#sharkUnderbelly)" />
+      <path d="M 14 -32 C 8 -72, -10 -82, -25 -86 C -18 -60, -14 -42, -30 -24 Z" fill="url(#sharkDorsalSkin)" stroke="#38bdf8" stroke-width="1.4" />
+      <path d="M 42 14 C 20 50, -8 78, -35 82 C -26 60, -12 38, 6 20 Z" fill="url(#sharkDorsalSkin)" stroke="#38bdf8" stroke-width="1.4" />
+      <path d="M 34 -6 Q 32 4, 34 14" stroke="#020617" stroke-width="2.2" fill="none" />
+      <path d="M 27 -6 Q 25 4, 27 14" stroke="#020617" stroke-width="2.2" fill="none" />
+      <path d="M 20 -6 Q 18 4, 20 14" stroke="#020617" stroke-width="2.2" fill="none" />
+      <path d="M 13 -6 Q 11 4, 13 14" stroke="#020617" stroke-width="2.2" fill="none" />
+      <path d="M 6 -6 Q 4 4, 6 14" stroke="#020617" stroke-width="2.2" fill="none" />
+      <circle cx="85" cy="-5" r="4" fill="#020617" />
+      <circle cx="86" cy="-6" r="1.5" fill="#00f2fe" />
+      <path d="M 94 -3 C 58 -24, 2 -26, -54 -15" stroke="rgba(255,255,255,0.75)" stroke-width="3" fill="none" />
     </g>
   </g>
 
-  <!-- 7. Splash Ring at Landing Point (Right) -->
-  <g class="splash-end-ring">
-    <ellipse cx="900" cy="330" rx="75" ry="20" fill="none" stroke="#ffffff" stroke-width="4.5" filter="url(#glow)" />
-    <ellipse cx="900" cy="330" rx="45" ry="12" fill="none" stroke="#38bdf8" stroke-width="3" />
-    <!-- Water spray droplets -->
-    <circle cx="870" cy="285" r="5" fill="#ffffff" />
-    <circle cx="915" cy="275" r="6" fill="#ffffff" />
-    <circle cx="945" cy="295" r="4.5" fill="#67e8f9" />
+  <!-- 7. Splash Ring at Landing Point -->
+  <g class="splash-right">
+    <ellipse cx="930" cy="360" rx="85" ry="22" fill="none" stroke="#ffffff" stroke-width="5" filter="url(#neonGlow)" />
+    <ellipse cx="930" cy="360" rx="50" ry="14" fill="none" stroke="#38bdf8" stroke-width="3.5" />
+    <circle cx="895" cy="310" r="6" fill="#ffffff" />
+    <circle cx="945" cy="300" r="7" fill="#ffffff" />
+    <circle cx="980" cy="320" r="5" fill="#67e8f9" />
   </g>
 
-  <!-- 8. Mid-Ground Ocean Wave -->
-  <path class="wave-layer-2" d="M -50 325 Q 120 295, 320 325 T 720 325 T 1120 325 T 1300 325 L 1300 480 L -50 480 Z" fill="url(#oceanMid)" opacity="0.9" />
+  <!-- 8. Mid-Ground Rolling Wave -->
+  <path class="wave-back" d="M -50 355 Q 120 320, 320 355 T 720 355 T 1120 355 T 1300 355 L 1300 520 L -50 520 Z" fill="url(#oceanLayer2)" opacity="0.92" />
 
-  <!-- 9. Foreground Crest Wave with Surf Foam -->
-  <path d="M 0 340 Q 180 320, 360 340 T 720 340 T 1080 340 T 1200 340 L 1200 480 L 0 480 Z" fill="url(#oceanFront)" />
-  <path d="M 0 340 Q 180 320, 360 340 T 720 340 T 1080 340 T 1200 340" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.8" />
+  <!-- 9. Foreground Crest Wave -->
+  <path class="wave-front" d="M 0 375 Q 180 345, 360 375 T 720 375 T 1080 375 T 1200 375 L 1200 520 L 0 520 Z" fill="url(#oceanLayer3)" />
+  <path class="wave-front" d="M 0 375 Q 180 345, 360 375 T 720 375 T 1080 375 T 1200 375" stroke="#ffffff" stroke-width="4.5" fill="none" opacity="0.85" />
 
-  <!-- 10. Center Banner Typography -->
+  <!-- 10. Center Banner Branding & Typography -->
   <g text-anchor="middle">
-    <!-- Subtitle Pill -->
-    <rect x="430" y="32" width="340" height="28" rx="14" fill="#020617" fill-opacity="0.85" stroke="#00f2fe" stroke-width="1.5" />
-    <text x="600" y="51" fill="#67e8f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" letter-spacing="2">
-      ✦ OFFICIAL GITHUB PROFILE ✦
+    <g transform="translate(420, 22)">
+      <rect width="360" height="26" rx="13" fill="#020617" fill-opacity="0.88" stroke="#00f2fe" stroke-width="1.2" />
+      <text x="180" y="17" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" letter-spacing="2.5">
+        ✦ OFFICIAL GITHUB PROFILE ✦
+      </text>
+    </g>
+
+    <text x="600" y="92" fill="url(#neonTitleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="3" filter="url(#strongGlow)">
+      NGUYEN NGO THINH
     </text>
 
-    <!-- Main Name Heading -->
-    <text x="600" y="112" fill="url(#textNeonGlow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="3" class="neon-title" filter="url(#strongGlow)">
-      HI I'M THINH
-    </text>
-
-    <!-- Roles & Specialization -->
-    <text x="600" y="148" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" letter-spacing="1.2">
+    <text x="600" y="128" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" letter-spacing="1">
       Backend Developer • AI Explorer • Shark Spirit
     </text>
-
-    <!-- Tech Badges Line -->
-    <text x="600" y="180" fill="#94a3b8" font-family="monospace" font-size="13" font-weight="bold">
-      [ Python • C/C++ • MySQL • AI LLMs • N5 Japanese ]
-    </text>
   </g>
 
-  <!-- 11. Subtle Tribal Shark Corner Crest -->
-  <g transform="translate(45, 45) scale(0.24)" opacity="0.75" filter="url(#glow)">
-    <path d="M 280 90 C 330 95, 380 105, 430 135 C 410 145, 380 155, 350 160 C 380 170, 420 185, 450 190 C 410 205, 360 215, 300 205 C 330 220, 360 235, 370 250 C 330 245, 290 230, 260 210 C 230 220, 200 235, 170 260 C 185 240, 205 225, 230 215 C 200 210, 160 200, 130 180 C 160 175, 190 175, 220 180 C 245 160, 280 140, 320 130 C 290 120, 250 115, 210 120 C 240 100, 260 92, 280 90 Z" fill="#00f2fe" />
-    <path d="M 220 40 C 240 70, 265 100, 300 115 C 270 118, 240 115, 215 105 C 195 90, 180 70, 170 50 C 185 45, 205 40, 220 40 Z" fill="#00f2fe" />
+  <!-- 11. ICON PILLS ROW WITH AUTHENTIC BRAND ICONS -->
+  <g transform="translate(60, 150)">
+    <!-- Pill 1: Python -->
+    <g transform="translate(0, 0)" class="tech-pill">
+      <rect width="130" height="34" rx="17" fill="url(#glassPillBg)" stroke="#3776AB" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <path d="M 12 0 C 5.5 0 6 2.5 6 2.5 L 6 5 L 12.5 5 L 12.5 6 L 3.5 6 C 3.5 6 0 5.5 0 12 C 0 18.5 3 18 3 18 L 5 18 L 5 15.5 C 5 15.5 4.8 12.5 8 12.5 L 14.5 12.5 C 14.5 12.5 17 12.8 17 9.5 L 17 2.5 C 17 2.5 17.5 0 12 0 Z M 8.5 2 C 9.3 2 10 2.7 10 3.5 C 10 4.3 9.3 5 8.5 5 C 7.7 5 7 4.3 7 3.5 C 7 2.7 7.7 2 8.5 2 Z" fill="#3776AB" />
+        <path d="M 12 24 C 18.5 24 18 21.5 18 21.5 L 18 19 L 11.5 19 L 11.5 18 L 20.5 18 C 20.5 18 24 18.5 24 12 C 24 5.5 21 6 21 6 L 19 6 L 19 8.5 C 19 8.5 19.2 11.5 16 11.5 L 9.5 11.5 C 9.5 11.5 7 11.2 7 14.5 L 7 21.5 C 7 21.5 6.5 24 12 24 Z M 15.5 22 C 14.7 22 14 21.3 14 20.5 C 14 19.7 14.7 19 15.5 19 C 16.3 19 17 19.7 17 20.5 C 17 21.3 16.3 22 15.5 22 Z" fill="#FFD438" />
+      </g>
+      <text x="42" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">Python</text>
+    </g>
+
+    <!-- Pill 2: C / C++ -->
+    <g transform="translate(142, 0)" class="tech-pill">
+      <rect width="138" height="34" rx="17" fill="url(#glassPillBg)" stroke="#00599C" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <polygon points="12,1 23,5 23,17 12,23 1,17 1,5" fill="#00599C" />
+        <text x="12" y="16" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="900" text-anchor="middle">C++</text>
+      </g>
+      <text x="40" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">C / C++</text>
+    </g>
+
+    <!-- Pill 3: MySQL -->
+    <g transform="translate(292, 0)" class="tech-pill">
+      <rect width="136" height="34" rx="17" fill="url(#glassPillBg)" stroke="#00758F" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <ellipse cx="12" cy="7" rx="9" ry="3.5" fill="#F29111" />
+        <path d="M 3 7 C 3 10, 21 10, 21 7 L 21 13 C 21 16, 3 16, 3 13 Z" fill="#00758F" />
+        <path d="M 3 13 C 3 16, 21 16, 21 13 L 21 19 C 21 22, 3 22, 3 19 Z" fill="#00758F" />
+      </g>
+      <text x="38" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">MySQL</text>
+    </g>
+
+    <!-- Pill 4: AI & LLMs -->
+    <g transform="translate(440, 0)" class="tech-pill">
+      <rect width="148" height="34" rx="17" fill="url(#glassPillBg)" stroke="#10A37F" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <path d="M 12 1 L 14.5 8 L 22 10.5 L 14.5 13 L 12 20.5 L 9.5 13 L 2 10.5 L 9.5 8 Z" fill="#10A37F" />
+        <circle cx="19" cy="4" r="2" fill="#00f2fe" />
+      </g>
+      <text x="38" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">AI &amp; LLMs</text>
+    </g>
+
+    <!-- Pill 5: VS Code -->
+    <g transform="translate(600, 0)" class="tech-pill">
+      <rect width="145" height="34" rx="17" fill="url(#glassPillBg)" stroke="#007ACC" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <path d="M 17 0.5 L 6 9 L 1 5 L 0 6 L 4 11 L 0 16 L 1 17 L 6 13 L 17 21.5 L 22 19 L 22 3 Z" fill="#007ACC" />
+      </g>
+      <text x="38" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">VS Code</text>
+    </g>
+
+    <!-- Pill 6: Cursor IDE -->
+    <g transform="translate(757, 0)" class="tech-pill">
+      <rect width="142" height="34" rx="17" fill="url(#glassPillBg)" stroke="#818cf8" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <rect width="20" height="18" rx="3" fill="#312e81" stroke="#818cf8" stroke-width="1.5" />
+        <path d="M 5 6 L 9 9 L 5 12" fill="none" stroke="#00f2fe" stroke-width="2" />
+        <line x1="11" y1="12" x2="16" y2="12" stroke="#ffffff" stroke-width="2" />
+      </g>
+      <text x="38" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">Cursor IDE</text>
+    </g>
+
+    <!-- Pill 7: N5 Japanese -->
+    <g transform="translate(911, 0)" class="tech-pill">
+      <rect width="168" height="34" rx="17" fill="url(#glassPillBg)" stroke="#BC002D" stroke-width="1.5" filter="url(#neonGlow)" />
+      <g transform="translate(12, 8) scale(0.75)">
+        <rect width="22" height="15" rx="2" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="11" cy="7.5" r="4.5" fill="#BC002D" />
+      </g>
+      <text x="38" y="22" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold">N5 Japanese 🇯🇵</text>
+    </g>
   </g>
 </svg>
