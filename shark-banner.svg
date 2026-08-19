@@ -102,7 +102,7 @@
 
     <g>
       <text x="70" y="105" class="eyebrow" font-size="18" letter-spacing="2" fill="#6FD8CE">// xin chào, mình là</text>
-      <text x="70" y="160" class="name" font-size="46" font-weight="700" fill="#F2FBFA">Nguyễn Ngô Thịnh</text>
+      <text x="70" y="160" class="name" font-size="46" font-weight="700" fill="#F2FBFA">Thinh</text>
       <rect x="530" y="128" width="5" height="38" fill="#4DE8E0" class="cursor"/>
 
       <text x="70" y="205" class="role" font-size="24" fill="#4DE8E0" font-weight="600">Backend Developer</text>
