@@ -1,0 +1,19 @@
+<svg fill="none" viewBox="0 0 846 160" width="846" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="qbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071B2C"/>
+      <stop offset="100%" stop-color="#0B2A3D"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .eng { font-size: 18px; fill: #F2FBFA; font-weight: 600; }
+    .vi  { font-size: 14px; fill: #9FD8D2; }
+    .sig { font-size: 14px; fill: #4DE8E0; }
+  </style>
+  <rect x="0" y="0" width="846" height="160" rx="14" fill="url(#qbg)" stroke="#14708A" stroke-opacity="0.5"/>
+  <text x="423" y="46" text-anchor="middle" class="eng">"Stay hungry, stay sharp — like a shark, never stop moving forward."</text>
+  <text x="423" y="76" text-anchor="middle" class="vi">"Như cá mập giữa đại dương, chỉ có tiến về phía trước mới giữ được sự sống —</text>
+  <text x="423" y="96" text-anchor="middle" class="vi">code cũng vậy, dừng lại là tụt lại."</text>
+  <text x="423" y="130" text-anchor="middle" class="sig">— Nguyễn Ngô Thịnh · Backend Developer 🦈 —</text>
+</svg>
